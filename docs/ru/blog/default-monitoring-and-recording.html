@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/static/assets/img/ikiris_favicon.svg">
+    <title>I-Kiri's Personal Site</title>
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+</head>
+
+<body
+         
+    >
+    <nav class="nav-main-container">
+    <div class="nav-grid">
+        <div class="nav-left">
+            
+                <a href="/blog/default-monitoring-and-recording.html" class="lang-flag">
+                    <img src="/static/assets/img/flag-en.svg" class="" alt="English" title="English">
+                </a>
+            
+                <a href="/de/blog/default-monitoring-and-recording.html" class="lang-flag">
+                    <img src="/static/assets/img/flag-de.svg" class="" alt="Deutsch" title="Deutsch">
+                </a>
+            
+                <a href="/ru/blog/default-monitoring-and-recording.html" class="lang-flag">
+                    <img src="/static/assets/img/flag-ru.svg" class="active" alt="Русский" title="Русский">
+                </a>
+            
+        </div>
+        <div class="nav-center">
+
+        </div>
+        <div class="nav-right">
+            <a href="/ru/" class="">ГЛАВНАЯ</a>
+            <a href="/ru/about.html" class="">ОБО МНЕ</a>
+            <a href="/ru/blog/index.html" class="active">БЛОГ</a>
+        </div>
+    </div>
+</nav>
+    <main class="content-wrapper">
+        
+<main class="blog-page-layout">
+    <div class="blog-page-inner-container">
+        <aside class="blog-page-sidebar">
+            <h3 class="articles-list-headline">Мои наброски</h3>
+            <hr class="articles-list-headline-hr">
+            <ul id="articles-personal" class="list-articles-group">
+            
+                <li class="">
+                    <a href="/ru/blog/the-default-committee.html">
+                        Комитет по дефолтам<br>
+                        <small>2026-07-06</small>
+                    </a>
+                </li>
+            
+                <li class="active">
+                    <a href="/ru/blog/default-monitoring-and-recording.html">
+                        Система дефолтов<br>
+                        <small>2026-07-05</small>
+                    </a>
+                </li>
+            
+            </ul>
+        </aside>
+        <div class="blog-page-article-container">
+            
+                <h1 class="article-title">Система дефолтов</h1>
+                <p class="article-date">2026-07-05</p>
+                <hr class="article-title-hr">
+                <div class="blog-page-article-content"><p>Система фиксации и мониторинга дефолтов - штука трудоемкая и трудносоставная.
+Полагаю, она такая во всех банках.
+Как-никак система эта основывается на весьма обширных требованиях ЦБ.
+Непростых и обширных требованиях.</p>
+<p>В нашем банке это была, наверное, самая сложная система, в проектировании которой я участвовала.
+И, конечно, предусмотреть в ней все на этапе проектирования было невозможно.</p>
+<p>Также, как и предусмотреть, ворох последующих изменений, сделавших архитектуру еще замысловатее.</p>
+<p>Звучит знакомо, не так ли?
+О чем-то похожем я уже писала.
+В статье про комитеты по дефолтам.
+Однако, "похожее" тут не значит "такое же". </p>
+<p>Из проекта по мониторингу я вынесла немного... другие уроки.
+Возможно, банальные.
+Только их истинность я впитала на практике.
+"Доверяй, но проверяй" - хорошая присказка.
+И тут она как-никак в тему.</p>
+<hr />
+<h3>Первое, что я выучила - время.</h3>
+<p>Даже не просто "время", а время, выданное в достаточном количестве.
+Без него, увы, распланировать, реализовать, протестировать и сделать все перечисленное хорошо невозможно.</p>
+<h3>Вторая простая истина - люди.</h3>
+<p>Их не должно быть много.
+Даже не 10 человек - предел управляемости команд, а меньше: человека три-четыре.
+Сложную логику и общую картину в головах так держать проще. </p>
+<h3>Третья - информация.</h3>
+<p>Общая картина в головах должна обновляться синхронно.
+Для этой цели умные люди задолго до нас сообразили рисовать и показывать друг другу схемы.
+Раз нарисовав, важно ее обновлять.
+И важно, очень важно, следовать нарисованному.</p>
+<h3>Четвертое - качество данных.</h3>
+<p>Его валидация надо делать с первого дня.
+Не тогда, когда система начала выдавать чудеса (особенно, если система такого масштаба).
+С первого дня.
+По нашей системе я вижу, сколько проблем мы сумели бы избежать, сколько человеко-часов сэкономить, сделали бы мы валидацию с самого начала.</p>
+<h3>И последнее - SLA (Service Level Agreement) на качество данных.</h3>
+<p>Его заключение с поставщиками не менее важно, чем внутренние проверки.
+В конце концов, если на вход регулярно будет приходить непонятно что, то любая, даже самая крутая и классная, система начнет работать по принципу "garbage in - garbage out".</p>
+<hr />
+<h3>Как итог.</h3>
+<p>Мы сделали хорошую систему.
+Не идеальную, конечно, но вполне рабочую.
+И я получила в процессе бесценный опыт, как и где сделать лучше, и каких ошибок стоит избегать, если жизнь снова подкинет мне задачку аналогичного масштаба. </p></div>
+            
+        </div>
+    </div>
+</main>
+
+    </main>
+    <footer class="footer-main-container">
+    <div class="footer-grid">
+        <div class="footer-left">
+
+        </div>
+        <div class="footer-center">
+            <p class="footer-text">
+                Сделано на чистом энтузиазме I-Kiri 2026-07-18. Обновлено 2026-07-18.
+            </p>
+        </div>
+        <div class="footer-right">
+            <a href="/ru/about.html#contact-link-section" class="footer-contact-link">
+                Мне можно написать!
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
